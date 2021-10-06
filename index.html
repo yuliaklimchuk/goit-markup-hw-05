@@ -44,7 +44,7 @@
             <section class="hero">
                 <div class="container">
                     <h1 class="hero-title">Ефективные решения для вашего бизнеса</h1>
-                    <button class="hero-btn" type="button">Заказать услугу</button>
+                    <button class="hero-btn" data-modal-open type="button">Заказать услугу</button>
                 </div>
                 </section>
             <section class="benefits section">
@@ -76,12 +76,21 @@
                     <ul class="works-list list">
                         <li class="works-list-item">
                             <img src="./images/img1.jpg" alt="рабтота на ноутбууке" width="370" height="294">
+                            <div class="works-item-wraper">
+                                <p class="works-item-text">Десктопные приложения</p>
+                            </div>
                         </li>
                         <li class="works-list-item">
                             <img src="./images/img2.jpg" alt="рабтота на смартфоне" width="370" height="294">
+                            <div class="works-item-wraper">
+                                <p class="works-item-text">Мобильные приложения</p>
+                            </div>
                         </li>
                         <li class="works-list-item">
                             <img src="./images/img3.jpg" alt="рабтота на планшете" width="370" height="294">
+                            <div class="works-item-wraper">
+                                <p class="works-item-text">Дизайнерские решения</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -333,5 +342,15 @@
                 </div>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" data-modal-close class="close-btn">
+                    <svg class="close-icon">
+                        <use href="./images/symbol-defs.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    <script src="./js/modal.js"></script>
     </body>
 </html>
